@@ -1,3 +1,4 @@
+import FeatureItem from "./FeatureItem";
 import React from "react";
 import iconOnline from "../images/icon-online.svg";
 import iconBudgeting from "../images/icon-budgeting.svg";
@@ -17,49 +18,44 @@ export default function Features() {
         </div>
 
         <div className="feature__grid">
-          <div className="feature__item">
-            <div className="feature__icon">
-              <img src={iconOnline} alt="online-icon" />
-            </div>
-            <div className="feature__title">Online Banking</div>
-            <div className="feature__description">
-              Our modern web and mobile applications allow you to keep track of
-              your finances wherever you are in the world.
-            </div>
-          </div>
+          <FeatureItem
+            icon={iconOnline}
+            iconAltText="online-icon"
+            title="Online Banking"
+            description="
+                Our modern web and mobile applications allow you to keep 
+                track of your finances wherever you are in the world.
+            "
+          />
 
-          <div className="feature__item">
-            <div className="feature__icon">
-              <img src={iconBudgeting} alt="budgeting-icon" />
-            </div>
-            <div className="feature__title">Simple Budgeting</div>
-            <div className="feature__description">
-              See exactly where your money goes each month. Receive
-              notifications when you’re close to hitting your limits.
-            </div>
-          </div>
+          <FeatureItem
+            icon={iconBudgeting}
+            iconAltText="budgeting-icon"
+            title="Simple Budgeting"
+            description="
+                See exactly where your money goes each month. 
+                Receive notifications when you’re close to hitting your limits.
+            "
+          />
 
-          <div className="feature__item">
-            <div className="feature__icon">
-              <img src={iconOnboarding} alt="onboarding-icon" />
-            </div>
-            <div className="feature__title">Fast Onboarding</div>
-            <div className="feature__description">
-              We don’t do branches. Open your account in minutes online and
-              start taking control of your finances right away.
-            </div>
-          </div>
-
-          <div className="feature__item">
-            <div className="feature__icon">
-              <img src={iconApi} alt="api-icon" />
-            </div>
-            <div className="feature__title">Open API</div>
-            <div className="feature__description">
-              Manage your savings, investments, pension, and much more from one
-              account. Tracking your money has never been easier.
-            </div>
-          </div>
+          <FeatureItem
+            icon={iconOnboarding}
+            iconAltText="onboarding-icon"
+            title="Fast Onboarding"
+            description="
+                We don’t do branches. Open your account in minutes online and
+                start taking control of your finances right away.
+            "
+          />
+          <FeatureItem
+            icon={iconApi}
+            iconAltText={"api-icon"}
+            title="Open API"
+            description="
+                Manage your savings, investments, pension, and much more from one
+                account. Tracking your money has never been easier.
+          "
+          />
         </div>
       </div>
     </section>

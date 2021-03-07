@@ -1,3 +1,4 @@
+import SocialLink from "./SocialLink";
 import React from "react";
 
 import logoDark from "../images/logo-dark.svg";
@@ -16,21 +17,11 @@ export default function Footer() {
         </a>
 
         <div className="footer__social">
-          <a href="/">
-            <img src={iconFB} alt="Facebook" />
-          </a>
-          <a href="/">
-            <img src={iconYoutube} alt="Youtube" />
-          </a>
-          <a href="/">
-            <img src={iconTwitter} alt="Twitter" />
-          </a>
-          <a href="/">
-            <img src={iconPinterest} alt="Pinterest" />
-          </a>
-          <a href="/">
-            <img src={iconInstagram} alt="Instagram" />
-          </a>
+          <SocialLink url="/" icon={iconFB} iconAltText="Facebook" />
+          <SocialLink url="/" icon={iconYoutube} iconAltText="Youtube" />
+          <SocialLink url="/" icon={iconTwitter} iconAltText="Twitter" />
+          <SocialLink url="/" icon={iconPinterest} iconAltText="Pinterest" />
+          <SocialLink url="/" icon={iconInstagram} iconAltText="Instagram" />
         </div>
 
         <div className="footer__links col1">

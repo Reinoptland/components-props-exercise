@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Easy Bank</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +40,31 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script defer>
+    const btnHamburger = document.querySelector("#btnHamburger");
+    const body = document.querySelector("body");
+    const header = document.querySelector(".header");
+    const overlay = document.querySelector(".overlay");
+    const fadeElems = document.querySelectorAll(".has-fade");
+
+    btnHamburger.addEventListener("click", function () {
+      if (header.classList.contains("open")) {
+        // Close Hamburger Menu
+        body.classList.remove("noscroll");
+        header.classList.remove("open");
+        fadeElems.forEach(function (element) {
+          element.classList.remove("fade-in");
+          element.classList.add("fade-out");
+        });
+      } else {
+        // Open Hamburger Menu
+        body.classList.add("noscroll");
+        header.classList.add("open");
+        fadeElems.forEach(function (element) {
+          element.classList.remove("fade-out");
+          element.classList.add("fade-in");
+        });
+      }
+    });
+  </script>
 </html>

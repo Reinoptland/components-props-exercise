@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import AppHeader from "./components/AppHeader";
 import logoDark from "./images/logo-dark.svg";
 import iconOnline from "./images/icon-online.svg";
@@ -18,24 +19,7 @@ function App() {
   return (
     <>
       <AppHeader />
-
-      <section className="hero">
-        <div className="container">
-          <div className="hero__image"></div>
-
-          <div className="hero__text container--pall">
-            <h1>Next generation digital banking</h1>
-            <p>
-              Take your financial life online. Your Easybank account will be a
-              one-stop-shop for spending, saving, budgeting, investing, and much
-              more.
-            </p>
-            <a href="/" className="button hero__cta">
-              Request Invite
-            </a>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       <section className="feature">
         <div className="feature__content container container--pall">

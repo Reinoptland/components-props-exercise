@@ -7,6 +7,7 @@ import iconYoutube from "../images/icon-youtube.svg";
 import iconTwitter from "../images/icon-twitter.svg";
 import iconPinterest from "../images/icon-pinterest.svg";
 import iconInstagram from "../images/icon-instagram.svg";
+import Link from "./Link";
 
 export default function Footer() {
   return (
@@ -25,15 +26,15 @@ export default function Footer() {
         </div>
 
         <div className="footer__links col1">
-          <a href="/">About Us</a>
-          <a href="/">Contact</a>
-          <a href="/">Blog</a>
+          <Link to="/">About Us</Link>
+          <Link to="/">Contact</Link>
+          <Link to="/">Blog</Link>
         </div>
 
         <div className="footer__links col2">
-          <a href="/">Careers</a>
-          <a href="/">Support</a>
-          <a href="/">Privacy Policy</a>
+          <Link to="/">Careers</Link>
+          <Link to="/">Support</Link>
+          <Link to="/">Privacy Policy</Link>
         </div>
 
         <div className="footer__cta">

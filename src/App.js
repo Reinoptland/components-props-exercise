@@ -12,7 +12,6 @@ function App() {
       <Hero />
       <Features />
       <Articles />
-
       <Footer />
       <Attribution />
     </>

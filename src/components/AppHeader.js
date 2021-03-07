@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/logo.svg";
+import Link from "./Link";
 
 export default function AppHeader() {
   return (
@@ -18,11 +19,11 @@ export default function AppHeader() {
         </div>
 
         <div className="header__links hide-for-mobile">
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Blog</a>
-          <a href="/">Careers</a>
+          <Link to="/">Home</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Contact</Link>
+          <Link to="/">Blog</Link>
+          <Link to="/">Careers</Link>
         </div>
 
         <a href="/" className="button header__cta hide-for-mobile">
@@ -31,11 +32,11 @@ export default function AppHeader() {
       </nav>
 
       <div className="header__menu has-fade">
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Blog</a>
-        <a href="/">Careers</a>
+        <Link to="/">Home</Link>
+        <Link to="/">About</Link>
+        <Link to="/">Contact</Link>
+        <Link to="/">Blog</Link>
+        <Link to="/">Careers</Link>
       </div>
     </header>
   );

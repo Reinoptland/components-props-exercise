@@ -1,3 +1,4 @@
+import Attribution from "./components/Attribution";
 import Footer from "./components/Footer";
 import Articles from "./components/Articles";
 import Features from "./components/Features";
@@ -13,17 +14,7 @@ function App() {
       <Articles />
 
       <Footer />
-      <div className="attribution">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by <a href="/">Your Name Here</a>.
-      </div>
+      <Attribution />
     </>
   );
 }

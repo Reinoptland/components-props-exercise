@@ -7,6 +7,7 @@ This is an exercise to split up a traditional HTML / CSS landingpage into smalle
 - You know how to make a React app using Create React App
 - You know how to make a React functional component
 - You can use JSX syntax
+- You know how to interpolate variables into JSX
 - You can use `import ... from` and `export default ...` to organise components in files
 - You can use props to make reusable components
 
